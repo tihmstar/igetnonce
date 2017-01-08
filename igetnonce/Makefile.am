@@ -1,5 +1,5 @@
-AM_CFLAGS = $(libirecovery_CFLAGS) $(libimobiledevice_CFLAGS)
-AM_LDFLAGS = $(libirecovery_LIBS) $(libimobiledevice_LIBS)
+AM_CFLAGS = $(libirecovery_CFLAGS) $(libimobiledevice_CFLAGS) $(libusbmuxd_CFLAGS)
+AM_LDFLAGS = $(libirecovery_LIBS) $(libimobiledevice_LIBS) $(libusbmuxd_LIBS)
 
 bin_PROGRAMS	= igetnonce
 igetnonce_CFLAGS = $(AM_CFLAGS)
