@@ -1,6 +1,9 @@
 AC_PREREQ([2.69])
 AC_INIT([igetnonce], [1.0], [tihmstar@gmail.com])
-AC_CONFIG_SRCDIR([igetnonce/])
+
+AM_INIT_AUTOMAKE([foreign])
+
+AC_CONFIG_SRCDIR([igetnonce/all_igetnonce.h])
 AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
