@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		873FC1291E22D7B40089AE60 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC11E1E22D7B40089AE60 /* common.c */; };
+		873FC12A1E22D7B40089AE60 /* dfu.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1201E22D7B40089AE60 /* dfu.c */; };
+		873FC12B1E22D7B40089AE60 /* idevicerestore.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1231E22D7B40089AE60 /* idevicerestore.c */; };
+		873FC12C1E22D7B40089AE60 /* normal.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1251E22D7B40089AE60 /* normal.c */; };
+		873FC12D1E22D7B40089AE60 /* recovery.c in Sources */ = {isa = PBXBuildFile; fileRef = 873FC1271E22D7B40089AE60 /* recovery.c */; };
+		873FC1301E22D7E40089AE60 /* libimobiledevice.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 873FC12F1E22D7E40089AE60 /* libimobiledevice.6.dylib */; };
+		873FC1321E22D7F60089AE60 /* libirecovery.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 873FC1311E22D7F60089AE60 /* libirecovery.2.dylib */; };
+		873FC1341E22D80A0089AE60 /* libplist.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 873FC1331E22D80A0089AE60 /* libplist.3.dylib */; };
 		87FBE6521D2BCC0700FB5E05 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 87FBE6511D2BCC0700FB5E05 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +31,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		873FC11E1E22D7B40089AE60 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		873FC11F1E22D7B40089AE60 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		873FC1201E22D7B40089AE60 /* dfu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dfu.c; sourceTree = "<group>"; };
+		873FC1211E22D7B40089AE60 /* dfu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dfu.h; sourceTree = "<group>"; };
+		873FC1221E22D7B40089AE60 /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
+		873FC1231E22D7B40089AE60 /* idevicerestore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = idevicerestore.c; sourceTree = "<group>"; };
+		873FC1241E22D7B40089AE60 /* idevicerestore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idevicerestore.h; sourceTree = "<group>"; };
+		873FC1251E22D7B40089AE60 /* normal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = normal.c; sourceTree = "<group>"; };
+		873FC1261E22D7B40089AE60 /* normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normal.h; sourceTree = "<group>"; };
+		873FC1271E22D7B40089AE60 /* recovery.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recovery.c; sourceTree = "<group>"; };
+		873FC1281E22D7B40089AE60 /* recovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recovery.h; sourceTree = "<group>"; };
+		873FC12F1E22D7E40089AE60 /* libimobiledevice.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libimobiledevice.6.dylib; path = ../../../../usr/local/lib/libimobiledevice.6.dylib; sourceTree = "<group>"; };
+		873FC1311E22D7F60089AE60 /* libirecovery.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libirecovery.2.dylib; path = ../../../../usr/local/lib/libirecovery.2.dylib; sourceTree = "<group>"; };
+		873FC1331E22D80A0089AE60 /* libplist.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libplist.3.dylib; path = ../../../../usr/local/lib/libplist.3.dylib; sourceTree = "<group>"; };
+		873FC1351E22D81A0089AE60 /* all_igetnonce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = all_igetnonce.h; sourceTree = "<group>"; };
 		87FBE64E1D2BCC0700FB5E05 /* igetnonce */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = igetnonce; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FBE6511D2BCC0700FB5E05 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +55,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873FC1341E22D80A0089AE60 /* libplist.3.dylib in Frameworks */,
+				873FC1321E22D7F60089AE60 /* libirecovery.2.dylib in Frameworks */,
+				873FC1301E22D7E40089AE60 /* libimobiledevice.6.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		873FC12E1E22D7E40089AE60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				873FC1331E22D80A0089AE60 /* libplist.3.dylib */,
+				873FC1311E22D7F60089AE60 /* libirecovery.2.dylib */,
+				873FC12F1E22D7E40089AE60 /* libimobiledevice.6.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87FBE6451D2BCC0700FB5E05 = {
 			isa = PBXGroup;
 			children = (
 				87FBE6501D2BCC0700FB5E05 /* igetnonce */,
 				87FBE64F1D2BCC0700FB5E05 /* Products */,
+				873FC12E1E22D7E40089AE60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +94,18 @@
 		87FBE6501D2BCC0700FB5E05 /* igetnonce */ = {
 			isa = PBXGroup;
 			children = (
+				873FC1351E22D81A0089AE60 /* all_igetnonce.h */,
+				873FC11E1E22D7B40089AE60 /* common.c */,
+				873FC11F1E22D7B40089AE60 /* common.h */,
+				873FC1201E22D7B40089AE60 /* dfu.c */,
+				873FC1211E22D7B40089AE60 /* dfu.h */,
+				873FC1221E22D7B40089AE60 /* endianness.h */,
+				873FC1231E22D7B40089AE60 /* idevicerestore.c */,
+				873FC1241E22D7B40089AE60 /* idevicerestore.h */,
+				873FC1251E22D7B40089AE60 /* normal.c */,
+				873FC1261E22D7B40089AE60 /* normal.h */,
+				873FC1271E22D7B40089AE60 /* recovery.c */,
+				873FC1281E22D7B40089AE60 /* recovery.h */,
 				87FBE6511D2BCC0700FB5E05 /* main.c */,
 			);
 			path = igetnonce;
@@ -118,6 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873FC12D1E22D7B40089AE60 /* recovery.c in Sources */,
+				873FC12A1E22D7B40089AE60 /* dfu.c in Sources */,
+				873FC12C1E22D7B40089AE60 /* normal.c in Sources */,
+				873FC1291E22D7B40089AE60 /* common.c in Sources */,
+				873FC12B1E22D7B40089AE60 /* idevicerestore.c in Sources */,
 				87FBE6521D2BCC0700FB5E05 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +261,9 @@
 		87FBE6561D2BCC0700FB5E05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +271,9 @@
 		87FBE6571D2BCC0700FB5E05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -237,6 +297,7 @@
 				87FBE6571D2BCC0700FB5E05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

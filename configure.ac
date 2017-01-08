@@ -1,0 +1,32 @@
+AC_PREREQ([2.69])
+AC_INIT([igetnonce], [1.0], [tihmstar@gmail.com])
+AC_CONFIG_SRCDIR([igetnonce/])
+AC_CONFIG_HEADERS([config.h])
+
+# Checks for programs.
+AC_PROG_CC
+CFLAGS+=" -std=c11"
+
+# Checks for libraries.
+PKG_CHECK_MODULES(libimobiledevice, libimobiledevice-1.0 >= 1.2.1)
+PKG_CHECK_MODULES(libirecovery, libirecovery >= 0.2.0)
+
+# Checks for header files.
+AC_CHECK_HEADERS([stdint.h stdlib.h string.h unistd.h])
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_TYPE_INT64_T
+AC_TYPE_SIZE_T
+AC_TYPE_UINT32_T
+AC_TYPE_UINT64_T
+
+# Checks for library functions.
+AC_FUNC_ERROR_AT_LINE
+AC_FUNC_FSEEKO
+AC_FUNC_MALLOC
+AC_CHECK_FUNCS([memset strdup strrchr])
+
+AC_OUTPUT([
+Makefile
+igetnonce/Makefile
+])
