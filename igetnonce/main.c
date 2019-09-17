@@ -105,6 +105,14 @@ int main(int argc, const char * argv[]) {
     }
     info("ecid=%llx\n",client->ecid);
     
+    if (client->mode->index == MODE_NORMAL) {
+        error("WARNING: Getting a nonce in normal mode will overwrite the generator in NVRAM!\n");
+        info("Continue anyway? [y/n] : ");
+        char cont[2] = "n";
+        scanf("%c", cont);
+        if (strncmp(cont, "y", 1) != 0) return -1;
+    }
+    
     unsigned char* nonce = NULL;
     int nonce_size = 0;
     
